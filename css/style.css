@@ -51,7 +51,7 @@ button {
 }
 
 section {
-  /*margin-bottom: 20px;*/
+  margin-bottom: 100px;
 }
 
 .section__title {
@@ -79,6 +79,7 @@ body {
   width: 100%;
   z-index: 3;
   background-color: #fff;
+  margin-bottom: 81px;
 }
 
 .nav {
@@ -133,7 +134,7 @@ body {
 }
 
 .top {
-  min-height: calc(100vh - 81px);
+  height: 100vh;
   background-image: url('../images/top-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -141,7 +142,7 @@ body {
 }
 
 .title {
-  padding-top: 16%;
+  padding-top: 30%;
   font-size: 96px;
   margin-bottom: 10px;
   font-weight: 400;
@@ -359,7 +360,7 @@ body {
 }
 
 .buy {
-  margin-bottom: 110px;
+  margin: 200px 0 200px 0;
   text-align: center;
   position: relative;
   overflow-x: hidden;
@@ -434,7 +435,7 @@ body {
 }
 
 .promo__inner {
-  background-image: url('../images/promo.jpg');
+  background-image: url('../images/promo1.jpg');
   min-height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -550,8 +551,6 @@ body {
   font-size: 13px;
 }
 
-.contacts__email {}
-
 .form {
   margin-bottom: 10px;
   position: relative;
@@ -578,8 +577,8 @@ body {
 .form__btn {
   width: 50px;
   height: 50px;
-  background-color: #CACAD6;
-  color: #5C5C5E;
+  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  color: #fff;
   text-transform: uppercase;
   font-weight: 700;
   border-radius: 50%;
@@ -600,6 +599,18 @@ body {
   display: flex;
   gap: 20px;
   justify-self: end;
+}
+
+@media (max-width:1600px) {
+  .title {
+    padding-top: 10%;
+  }
+}
+
+@media (max-width:1600px) {
+  .title {
+    padding-top: 20%;
+  }
 }
 
 @media (max-width:1140px) {
@@ -673,11 +684,15 @@ body {
     padding: 10px 0;
     display: inline-block;
   }
+  .title {
+    padding-top: 10%;
+  }
 }
 
 @media (max-width:768px) {
   .title {
     font-size: 66px;
+    padding-top: 20%;
   }
   .subtitle {
     font-size: 24px;
@@ -734,6 +749,9 @@ body {
   .nav {
     grid-template-columns: 1fr 2fr 1fr;
   }
+  .title {
+    padding-top: 25%;
+  }
 }
 
 @media (max-width:420px) {
@@ -761,5 +779,7 @@ body {
     margin-bottom: 20px;
     gap: 30px;
   }
-
+  .title {
+    padding-top: 45%;
+  }
 }
