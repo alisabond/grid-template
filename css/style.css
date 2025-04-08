@@ -607,12 +607,6 @@ body {
   }
 }
 
-@media (max-width:1600px) {
-  .title {
-    padding-top: 20%;
-  }
-}
-
 @media (max-width:1140px) {
   .footer .menu {
     display: none;
